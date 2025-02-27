@@ -20,14 +20,14 @@ See [Content Creation: PDFs Authoring Guides](https://www.section508.gov/create/
 
 A PDF is an electronic document that can be viewed, printed, and electronically submitted. It has three views:
 * **Physical view**: Visual representation of the text and graphics; the print view. If a document is scanned, the PDF might not contain any actual content.
-* **Content view**: Displays the actual content— textual and graphical elements of the PDF such as pages, containers, and tags. To view, select **View > Show/Hide > Side Panels > Content** or right-click on side panel to select.
+* **Content view**: Displays the actual content—textual and graphical elements of the PDF such as pages, containers, and tags. To view, select **View > Show/Hide > Side Panels > Content** or right-click on side panel to select.
 * **Tag structure tree**: Displays the logical structure of the document and the reading order for assistive technology. Elements like headers, paragraphs, lists, and tables are displayed. To view, select **View > Show/Hide > Side Panels > Accessibility Tags** or right-click on side panel to select.
 
 > [!Note]
 > To expand the tree structure, press **Shift + 8**.
 
 ### Tags
-Most documents are comprised of a few tags but 37 tags are available to authors to fully convey the document's formatting and structure. Tag names from a source document outside of Acrobat may display differently in the structure tree. If all the outside tags map to standard Acrobat tags, then the tags are valid.
+Most documents are comprised of a few tags but 37 tags are available to fully convey the document's formatting and structure. Tag names from a source document outside of Acrobat may display differently in the structure tree. If all the outside tags map to standard Acrobat tags, then the tags are valid.
 
 ![Common PDF Tag Types](./assets/pdf_tag_types.png)
 
@@ -47,15 +47,12 @@ Two methods are available:
     See [_Module 2: Testing PDFs for Accessibility_](#section-2-testing-a-pdf-for-accessibility) and 
     [_Module 4: Converting Scanned Documents into Section 508 Conformant PDFs_](#section-4-converting-scanned-documents-into-section-508-conformant-pdfs).  
 
-2. Convert files into PDFs with the Adobe plugin for Office applications.
-
-    > [!TIP]
-    > Before you create the PDF, ensure that the Office document is completely accessible so that the PDF will have fewer issues. 
+2. Convert accessible files into PDFs with the Adobe plugin for Office applications.
 
     Click **Create PDF** in the Menu bar on the Acrobat tab.
 
-    > [!WARNING]
-    > If you create a PDF via the File menu, select **Save as Adobe PDF** to create a PDF with tags. If you print the document as a PDF, then the tags are not applied. 
+> [!WARNING]
+> If you create a PDF via the File menu, select **Save as Adobe PDF** to create a PDF with tags. If you print the document as a PDF, then the tags are not applied. 
 
 #### Setting up the Acrobat plugin in Office apps
 1. On the Acrobat tab, click **Preferences** and then check the Acrobat PDFMaker and Application settings.
@@ -88,7 +85,8 @@ Each PDF must be visually verified to identify issues that cannot be detected by
 4. On the Initial View tab, select _Document Title_ in the **Show** field.
 5. On the Advanced tab, verify that the correct language is selected in the **Language** field.
 
-   > If the document contains multiple languages, then the language is set as a property of the tag associated with the content that contains a language change before the document is considered fully accessible. 
+> [!Note]
+> If the document contains multiple languages, then the language is set as a property of the tag associated with the content that contains a language change before the document is considered fully accessible. 
 
 ### Document Contents
 
@@ -132,7 +130,7 @@ To verify tag using the Accessibility tags pane, highlight a cell in the table. 
 
 Complex tables must contain proper scope, which denotes which data cells are headers. Span identifies the number of columns or rows a data cell extends across.
 
-Open the Order pane and then select **. . . > Show reading order panel > Table Editor**. Click on a cell and then select Table Cell Properties. Verify the scope is set correctly. Also use the Table Editor to identify any cells that span more than one column or row.
+Open the Order pane and then select **. . . > Show reading order panel > Table Editor**. Click on a cell and then select **Table Cell Properties**. Verify the scope is set correctly. Also use the Table Editor to identify any cells that span more than one column or row.
 
 The Table Editor tool may not work correctly so use the Tag Structure tree for tag verification if necessary and assistive technology to ensure that it reads correctly.
 
@@ -230,13 +228,13 @@ The accessibility checker may return these two errors for data tables:
 
 When remediating data tables retag contents that should not be part of the table. 
 
-See the [video](https://www.section508.gov/training/pdfs/aed-cop-pdf03/) at 10.29. 
+See the [video](https://www.section508.gov/training/pdfs/aed-cop-pdf03/) at 10:29. 
 
 ### Remediating Form Field Elements
 
 Select **All tools > Prepare a form.**
 
-See the [video](https://www.section508.gov/training/pdfs/aed-cop-pdf03/) at 11.50.
+See the [video](https://www.section508.gov/training/pdfs/aed-cop-pdf03/) at 11:50.
 
 ### Deleting Empty Tags
 
@@ -311,8 +309,8 @@ Inspect the documents after you review the OCR suspects. You can review it in th
   ![screenshot of actual text field](./assets/actual_text_field.png)
 
 
-  > [!Note]
-  > The training video mentioned the Tag Properties menu, not the Object Properties menu, but didn't explain further.
+> [!Note]
+> The training video mentioned the Tag Properties menu, not the Object Properties menu, but didn't explain further.
 
 ### How to Make the PDF Full Accessible
 After the OCR errors are corrected, take these actions:
@@ -324,7 +322,7 @@ After the OCR errors are corrected, take these actions:
 If secure e-signature is not available, typically a signed memorandum is a 508-conformant Word doc that was printed for signature and then scanned. If such a multi-page document contains only one or two pages with a signature block, then create a merged PDF document. Create a 508-conformant PDF from the Word doc pages without a signature, create a 508-conformant PDF from the scanned signature pages, and then merge the PDFs into one document. You must replace the unsigned page from the Word PDF with the scanned signature page. Use the Organize pages tool to create the merged document. Recheck the merged PDF for conformance.
 
 > [!Note]
-> After you create a merged PDF, use **Menu > Save as other > Reduced Size PDF** to create the smallest sized document possible.
+> After you create a merged PDF, use **Menu > Save as other > Reduced Size PDF** to create the smallest-sized document possible.
 
 
 
